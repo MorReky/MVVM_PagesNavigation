@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Infrastact\Commands\Base\CommandBase.cs" />
     <Compile Include="Infrastact\Commands\LambdaCommand.cs" />
+    <Compile Include="Infrastact\FrameApp.cs" />
     <Compile Include="ViewModel\Base\ViewModelBase.cs" />
     <Compile Include="ViewModel\ViewModelMainWindow.cs" />
     <Compile Include="ViewModel\ViewModelPageDisplay.cs" />

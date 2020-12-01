@@ -4,13 +4,20 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MVVM_PagesNavigation.View"
+      xmlns:vm="clr-namespace:MVVM_PagesNavigation.ViewModel"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ViewPageDisplay">
+    <Page.DataContext>
+        <vm:ViewModelPageDisplay/>
+    </Page.DataContext>
 
     <Grid Background="Aqua">
         <Button Content="Page 2"
                 Width="200"
-                Height="50"/>
+                Height="50"
+                Command="{Binding }">
+        
+        </Button>
     </Grid>
 </Page>

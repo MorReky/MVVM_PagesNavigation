@@ -12,7 +12,7 @@ namespace MVVM_PagesNavigation.ViewModel.Base
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public virtual void OnPropertyChangedEventHandler([CallerMemberName] string PropertyName=null)
+        public virtual void OnPropertyChanged([CallerMemberName] string PropertyName=null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
         }
@@ -21,7 +21,7 @@ namespace MVVM_PagesNavigation.ViewModel.Base
         {
             if (Equals(field, value)) return false;
             field = value;
-            OnPropertyChangedEventHandler(PropertyName);
+            OnPropertyChanged(PropertyName);
             return false;
         }
     }
