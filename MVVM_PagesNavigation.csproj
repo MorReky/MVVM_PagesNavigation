@@ -55,11 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Infrastact\Commands\Base\CommandBase.cs" />
+    <Compile Include="Infrastact\Commands\LambdaCommand.cs" />
     <Compile Include="ViewModel\Base\ViewModelBase.cs" />
     <Compile Include="ViewModel\ViewModelMainWindow.cs" />
     <Compile Include="ViewModel\ViewModelPageDisplay.cs" />
+    <Compile Include="ViewModel\ViewModelPageDisplay2.cs" />
     <Compile Include="View\ViewPageDisplay.xaml.cs">
       <DependentUpon>ViewPageDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewPageDisplay2.xaml.cs">
+      <DependentUpon>ViewPageDisplay2.xaml</DependentUpon>
     </Compile>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -74,6 +80,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\ViewPageDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ViewPageDisplay2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
